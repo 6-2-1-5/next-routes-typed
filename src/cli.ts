@@ -77,7 +77,7 @@ export async function execute(options: GeneratorOptions) {
 const program = new Command();
 
 program
-    .name('next-routify')
+    .name('next-routes-typed')
     .description('Generate type-safe route utilities for Next.js app router')
     .version('0.1.0')
     .option('-o, --output <path>', 'output directory', 'src/lib')

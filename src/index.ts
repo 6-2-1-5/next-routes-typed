@@ -9,7 +9,7 @@ function validateESLintVersion() {
     try {
         const version = parseInt(ESLint.version.split('.')[0], 10);
         if (version < 8) {
-            console.warn('Warning: next-routify requires ESLint v8 or higher');
+            console.warn('Warning: next-routes-typed requires ESLint v8 or higher');
         }
     } catch (error) {
         // ESLint not found, skip validation

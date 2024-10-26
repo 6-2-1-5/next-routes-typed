@@ -1,12 +1,12 @@
-# next-routify
+# next-routes-typed
 
-[![npm version](https://badge.fury.io/js/next-routify.svg)](https://badge.fury.io/js/next-routify)
+[![npm version](https://badge.fury.io/js/next-routes-typed.svg)](https://badge.fury.io/js/next-routes-typed)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Downloads](https://img.shields.io/npm/dm/next-routify.svg)](https://www.npmjs.com/package/next-routify)
+[![Downloads](https://img.shields.io/npm/dm/next-routes-typed.svg)](https://www.npmjs.com/package/next-routes-typed)
 
 Generate type-safe route utilities for Next.js app router. Automatically generate route constants and helper functions that match your app directory structure.
 
-## 🌟 Features and Why next-routify?
+## 🌟 Features and Why next-routes-typed?
 
 - ✨ **Type-safe route generation**: Full TypeScript support with type inference
 - 🎯 **App Router Support**: Built for Next.js 13+ app directory
@@ -22,11 +22,11 @@ Generate type-safe route utilities for Next.js app router. Automatically generat
 ## 🚀 Getting Started
 
 ```bash
-npm install --save-dev next-routify
+npm install --save-dev next-routes-typed
 # or
-yarn add -D next-routify
+yarn add -D next-routes-typed
 # or
-pnpm add -D next-routify
+pnpm add -D next-routes-typed
 ```
 
 ## 📘 Usage
@@ -36,7 +36,7 @@ pnpm add -D next-routify
 Run in your Next.js project root:
 
 ```bash
-npx next-routify
+npx next-routes-typed
 ```
 
 This will generate a `routes.ts` file in `src/lib` by default.
@@ -44,7 +44,7 @@ This will generate a `routes.ts` file in `src/lib` by default.
 ### CLI Options
 
 ```bash
-npx next-routify --help
+npx next-routes-typed --help
 
 Options:
   -o, --output <path>       output directory (default: "src/lib")
@@ -73,7 +73,7 @@ app/
             └── page.tsx
 ```
 
-`next-routify` will generate:
+`next-routes-typed` will generate:
 
 ```typescript
 export const routes = {
@@ -158,5 +158,5 @@ This project is licensed under the [MIT License](https://github.com/git/git-scm.
 
 ## 📢 Support
 
-- 🐛 For bugs and feature requests, please [create an issue](https://github.com/6-2-1-5/next-routify/issues)
-- 💬 For questions and discussions, please use [GitHub Discussions](https://github.com/6-2-1-5/next-routify/discussions)
+- 🐛 For bugs and feature requests, please [create an issue](https://github.com/6-2-1-5/next-routes-typed/issues)
+- 💬 For questions and discussions, please use [GitHub Discussions](https://github.com/6-2-1-5/next-routes-typed/discussions)

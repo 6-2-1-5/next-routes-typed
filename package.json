@@ -1,12 +1,12 @@
 {
-    "name": "next-routify",
+    "name": "next-routes-typed",
     "version": "0.1.0",
     "description": "Generate type-safe route utilities for Next.js app router",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "type": "module",
     "bin": {
-        "next-routify": "./dist/cli.js"
+        "next-routes-typed": "./dist/cli.js"
     },
     "exports": {
         ".": {
@@ -28,12 +28,12 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/6-2-1-5/next-routify.git"
+        "url": "git+https://github.com/6-2-1-5/next-routes-typed.git"
     },
     "bugs": {
-        "url": "https://github.com/6-2-1-5/next-routify/issues"
+        "url": "https://github.com/6-2-1-5/next-routes-typed/issues"
     },
-    "homepage": "https://github.com/6-2-1-5/next-routify#readme",
+    "homepage": "https://github.com/6-2-1-5/next-routes-typed#readme",
     "peerDependencies": {
         "eslint": "^8.0.0 || ^9.0.0",
         "next": ">=13.4.0"
