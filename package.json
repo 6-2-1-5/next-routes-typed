@@ -2,17 +2,27 @@
     "name": "next-routify",
     "version": "0.1.0",
     "description": "Generate type-safe route utilities for Next.js app router",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "type": "module",
     "bin": {
-        "next-routify": "dist/cli.js"
+        "next-routify": "./dist/cli.js"
     },
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "tsc",
         "dev": "tsc -w",
         "lint": "eslint src/**/*.ts",
         "test": "jest",
-        "prepublishOnly": "npm run build"
+        "prepublishOnly": "pnpm run build"
     },
     "keywords": [
         "nextjs",
@@ -33,21 +43,29 @@
     },
     "homepage": "https://github.com/6-2-1-5/next-routify#readme",
     "peerDependencies": {
+        "eslint": "^8.0.0 || ^9.0.0",
         "next": ">=13.4.0"
     },
+    "peerDependenciesMeta": {
+        "eslint": {
+            "optional": true
+        }
+    },
     "dependencies": {
+        "chalk": "^5.3.0",
         "commander": "^11.0.0",
-        "prettier": "^3.0.0",
-        "chalk": "^5.3.0"
+        "prettier": "^3.0.0"
     },
     "devDependencies": {
-        "@types/node": "^20.0.0",
+        "@types/eslint": "^8.56.0",
         "@types/jest": "^29.0.0",
+        "@types/node": "^20.0.0",
         "@typescript-eslint/eslint-plugin": "^6.0.0",
         "@typescript-eslint/parser": "^6.0.0",
         "eslint": "^8.0.0",
         "jest": "^29.0.0",
         "ts-jest": "^29.0.0",
+        "tsup": "^8.3.5",
         "typescript": "^5.0.0"
     },
     "engines": {
