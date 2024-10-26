@@ -4,11 +4,11 @@ Generate type-safe route utilities for Next.js app router. Automatically generat
 
 ## Features
 
-✨ **Automatic Route Generation**: Generates routes based on your Next.js app directory structure
-🎯 **Type Safety**: Full TypeScript support with type inference
-🔄 **Dynamic Routes**: Support for dynamic routes, catch-all routes, and optional catch-all routes
-📁 **Route Groups**: Support for route groups (folders in parentheses)
-🛠️ **Custom Configuration**: Configurable output location and filename
+✨ **Automatic Route Generation**: Generates routes based on your Next.js app directory structure<br>
+🎯 **Type Safety**: Full TypeScript support with type inference<br>
+🔄 **Dynamic Routes**: Support for dynamic routes, catch-all routes, and optional catch-all routes<br>
+📁 **Route Groups**: Support for route groups (folders in parentheses)<br>
+🛠️ **Custom Configuration**: Configurable output location and filename<br>
 🎨 **Pretty Output**: Formatted output with Prettier support
 
 ## Installation
