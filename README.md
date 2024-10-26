@@ -19,7 +19,7 @@ Generate type-safe route utilities for Next.js app router. Automatically generat
 - 🚀 **Performance**: Zero runtime overhead
 - 📦 **Lightweight**: No dependencies
 
-## Installation
+## 🚀 Getting Started
 
 ```bash
 npm install --save-dev next-routify
