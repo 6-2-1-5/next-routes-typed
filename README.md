@@ -1,15 +1,23 @@
 # next-routify
 
+[![npm version](https://badge.fury.io/js/next-routify.svg)](https://badge.fury.io/js/next-routify)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Downloads](https://img.shields.io/npm/dm/next-routify.svg)](https://www.npmjs.com/package/next-routify)
+
 Generate type-safe route utilities for Next.js app router. Automatically generate route constants and helper functions that match your app directory structure.
 
-## Features
+## 🌟 Features and Why next-routify?
 
-✨ **Automatic Route Generation**: Generates routes based on your Next.js app directory structure<br>
-🎯 **Type Safety**: Full TypeScript support with type inference<br>
-🔄 **Dynamic Routes**: Support for dynamic routes, catch-all routes, and optional catch-all routes<br>
-📁 **Route Groups**: Support for route groups (folders in parentheses)<br>
-🛠️ **Custom Configuration**: Configurable output location and filename<br>
-🎨 **Pretty Output**: Formatted output with Prettier support
+- ✨ **Type-safe route generation**: Full TypeScript support with type inference
+- 🎯 **App Router Support**: Built for Next.js 13+ app directory
+- 🔄 **Dynamic Routes**: Support for `[param]`, `[...catchAll]`, and `[[...optional]]`
+- 📁 **Route Groups**: Support for route groups (folders in parentheses)
+- 🌍 **i18n Ready**: Perfect for internationalized applications
+- 🛠️ **Zero Config**: Works out of the box with your existing Next.js structure
+- 🎨 **Developer Experience**: Great autocomplete and type checking
+- 🔒 **Type Safety**: Catch routing errors at compile time
+- 🚀 **Performance**: Zero runtime overhead
+- 📦 **Lightweight**: No dependencies
 
 ## Installation
 
@@ -21,7 +29,7 @@ yarn add -D next-routify
 pnpm add -D next-routify
 ```
 
-## Usage
+## 📘 Usage
 
 ### Basic Usage
 
@@ -124,15 +132,17 @@ const productUrl = createUrl(
 // Result: /products/electronics/123?ref=homepage
 ```
 
-## Supported Route Types
+## 🎯 Supported Route Types
 
 - Basic routes: `/about`
 - Dynamic routes: `/blog/[slug]`
 - Catch-all routes: `/docs/[...slug]`
 - Optional catch-all routes: `/docs/[[...slug]]`
 - Route groups: `(marketing)/blog`
+- Parallel routes: `@modal/login`
+- Intercepting routes: `(.)photo`
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -142,11 +152,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt).
 
-## Support
+## 📢 Support
 
 - 🐛 For bugs and feature requests, please [create an issue](https://github.com/6-2-1-5/next-routify/issues)
 - 💬 For questions and discussions, please use [GitHub Discussions](https://github.com/6-2-1-5/next-routify/discussions)
