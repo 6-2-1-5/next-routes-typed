@@ -113,9 +113,7 @@ function generateRoutesType(node: RouteNode, prefix = '', visitedSegments = new 
 export function generateRouteTemplate(routeNode: RouteNode, debug = false): string {
     const routesContent = generateRoutesType(routeNode, '', new Set(), debug);
 
-    return `import { ParsedUrlQueryInput } from 'querystring';
-
-type RouteConfig = {
+    return `type RouteConfig = {
     [key: string]: {
         path: string;
         params?: Record<string, string>;
@@ -131,7 +129,7 @@ export type AppRoutes = keyof typeof routes;
 export function createUrl(
     route: AppRoutes,
     params?: Record<string, string>,
-    query?: Record<string, ParsedUrlQueryInput>
+    query?: Record<string, string>
 ): string {
     let path: string = routes[route].path;
 
